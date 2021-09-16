@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#list-wrapper{
+    
+    background-color: antiquewhite;
+}
+#list-wrapper li{
+    list-style-type: none;
+    font-size: 2rem;
+}
+#list-wrapper i{
+    font-size: 1.3rem;
+    
+}
+
+#list-wrapper i:hover{
+    cursor: pointer;
+    color: red;
+}
