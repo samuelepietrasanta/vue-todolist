@@ -36,3 +36,10 @@ input{
     cursor: pointer;
     color: red;
 }
+
+.my_btn{
+    border-color: transparent;
+    border-radius:10px;
+    background-color: rgb(241, 200, 145);
+    padding: 5px;
+}
