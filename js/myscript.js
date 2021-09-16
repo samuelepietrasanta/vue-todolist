@@ -12,16 +12,22 @@ let app = new Vue({
     el:'#app',
 
     data:{
-        supermercato : ['latte', 'uova' , 'cereali' , 'frutta', 'carne', 'pane', 'dolcetto tattico']
+        supermercato : ['latte', 'uova' , 'cereali' , 'frutta', 'carne', 'pane', 'dolcetto tattico'],
+
+        inputText:'',
     },
 
     methods:{
         deleteItem : function(indice){
-            this.supermercato.splice(indice,1)
-        
+            this.supermercato.splice(indice,1);
+        },
 
-    }
-        
+        addItem : function(){
+            if(this.inputText.trim(' ').length > 0){
+                this.supermercato.push(this.inputText);
+            }
+            this.inputText = '';
+        },
 
     },
 

@@ -17,10 +17,12 @@
 
 
     <h1 class="mb-5 text-center" > to do list</h1>
-
+    
     <div id="app" class="container">
         <div class="row">
             <div class="col-12" id="list-wrapper">
+                <input class="mb-5" type="text" placeholder="Scrivi il nuovo elemento che vuoi aggiungere"
+                v-model='inputText' @keyup.enter='addItem'>
                 <ul>
                     <li v-for= '(cibo, indice) in supermercato'>
                         {{cibo}} 

@@ -14,6 +14,11 @@ h1{
     text-transform: uppercase;
 }
 
+input{
+    font-size: 1.2rem;
+    width: 60%;
+}
+
 #list-wrapper{
     
     background-color: antiquewhite;
