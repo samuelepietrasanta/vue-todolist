@@ -25,7 +25,7 @@
                 v-model='inputText' @keyup.enter='addItem'>
                 <button class=" my_btn" @click='addItem'>Aggiungi</button>
                 <ul>
-                    <li v-for= '(cibo, indice) in supermercato'>
+                    <li v-for= '(cibo, indice) in supermercato' :class="{linethrough : isDone}" @click='lineThrough'>
                         {{cibo}} 
                         <i class="fas fa-times-circle" @click='deleteItem(indice)'></i>
                     </li>

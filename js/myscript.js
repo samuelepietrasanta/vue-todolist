@@ -15,6 +15,8 @@ let app = new Vue({
         supermercato : ['latte', 'uova' , 'cereali' , 'frutta', 'carne', 'pane', 'dolcetto tattico'],
 
         inputText:'',
+
+        isDone : false,
     },
 
     methods:{
@@ -28,6 +30,14 @@ let app = new Vue({
             }
             this.inputText = '';
         },
+
+        lineThrough : function(){
+            if(this.isDone == false){
+                this.isDone = true;
+            }else {this.isDone = false}
+            console.log(this.isDone)
+        }
+
 
     },
 
